@@ -1,0 +1,74 @@
+/* GRID CONTAINER */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; /* spacing between cards */
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* STACK HEADER (title above buttons) */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* CARD */
+.card {
+  background-color: #1f2535;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px; 
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* TOP SECTION */
+.card-top {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.card-top img {
+  width: 48px;
+  height: 48px;
+}
+
+/* TITLE */
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+/* BOTTOM SECTION */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+/* SWITCH ALIGNMENT */
+.react-switch {
+  vertical-align: middle;
+}

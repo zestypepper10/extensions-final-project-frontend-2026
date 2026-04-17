@@ -1,0 +1,114 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY LAYOUT */
+body {
+  min-height: 100vh;
+  background-color: #091337;
+  display: flex;
+  justify-content: center;
+}
+
+/* MAIN APP CONTAINER */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2.5rem 2rem;
+}
+
+/* HEADER */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap; /* allows stacking on small screens and not flow over */
+  gap: 1rem;
+}
+
+
+/* TITLE */
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* FILTER BUTTON GROUP */
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* BASE BUTTON STYLE */
+button {
+  background-color: #1f2535;
+  color: #ffffff;
+  border: 1px solid white; 
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #ee5f54;
+  color: #000;
+  border-color: #ee5f54; 
+}
+
+/* SELECTED STATE (DOUBLE RING EFFECT) */
+.selected-button {
+  background-color: #1f2535;
+  color: #ffffff;
+   /* inner ring (blue) */
+  border: 2px solid #005fcc;
+
+  /* outer ring (white) */
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+/* Keeps rings EVEN WHEN HOVERED */
+.selected-button:hover {
+  background-color: #ee5f54;
+  color: #000;
+  border: 2px solid #005fcc;
+  box-shadow: 0 0 0 3px #ffffff;
+}
+
+/* REMOVE BUTTON BASE */
+.remove-button {
+  background-color: #1f2535;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  
+}
+
+/* REMOVE BUTTON */
+.remove-button:hover {
+  background-color: #ee5f54;
+  color: black;
+}
+
+/* DESCRIPTION TEXT */
+.description {
+  color: #cfd6e4;
+  font-size: 0.9rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+
+
+
